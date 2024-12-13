@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+        body {
+            margin: 0;
+            padding: 0;
+            height: 90vh;
+            animation: backgroundcolor 50s infinite alternate;
+        }
+        
+
+       
+        @keyframes backgroundcolor {
+            0% {
+                background-color: rgb(177, 238, 165);  
+            }
+            100% {
+                background-color: rgb(22, 153, 55);  
+            }
+        }
+
+        /* Menambahkan gaya CSS untuk elemen h1 */
+        h1 {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            font-size: 90px; 
+            text-align: center;  
+            color: #15701a;  
+            animation: down 2s ease-out;  
+            margin-top: 20px; 
+        }
+
+       
+        @keyframes down {
+            0% {
+                transform: translateY(-100vh); 
+                opacity: 0;  
+            }
+            100% {
+                transform: translateY(0); 
+                opacity: 1; 
+            }
+            
+        }
+        
+        .gambar4 {
+  position: absolute;
+  bottom: 12%;
+  right: 65%;
+  width: 400px; 
+  height: 400px;
+        }
+        .gambar1 {
+  position: absolute; 
+  bottom: 5%;
+  right: 10px;
+  width: 1000px; 
+  height: 90px;
+  z-index: 1; 
+}
+
+.gambar3-container {
+  position: relative;
+}
+
+.gambar3 {
+  position: absolute;
+  bottom: -200px; 
+  left: 3%;
+  opacity: 0;
+  animation: munculNaik 1s ease-in-out 45s forwards;
+  width: 450px;
+  height: 450px;
+}
+
+@keyframes munculNaik {
+  0% {
+    opacity: 0;
+    bottom: -200px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 50px;
+  }
+ 
+}
+
+.gambar5 {
+  position: absolute;
+  bottom: -200px; 
+  right: -2%;
+  opacity: 0; 
+  animation: munculNaik2 1s ease-in-out 45s forwards; 
+  width: 300px;
+  height: 350px;
+}
+
+@keyframes munculNaik2 {
+  0% {
+    opacity: 0;
+    bottom: -200px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 80px;
+  }
+}
+.gambar6 {
+  position: absolute;
+  bottom: -200px; 
+  right: -2%;
+  opacity: 0; 
+  animation: munculNaik3 1s ease-in-out 45s forwards; 
+  width: 200px;
+  height: 250px;
+}
+
+@keyframes munculNaik3 {
+  0% {
+    opacity: 0;
+    bottom: -200px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 90px;
+  }
+}
+.gambar7 {
+  position: absolute;
+  bottom: -200px; 
+  right: -4%;
+  opacity: 0; 
+  animation: munculNaik4 1s ease-in-out 45s forwards; 
+  width: 400px;
+  height: 550px;
+}
+
+@keyframes munculNaik4 {
+  0% {
+    opacity: 0;
+    bottom: -200px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0px;
+  }
+}
+
+.gambar9 {
+  position: absolute;
+  bottom: -200px; 
+  right: 30%;
+  opacity: 0; 
+  animation: munculNaik6 1s ease-in-out 45s forwards; 
+  width: 60px;
+  height: 60px;
+}
+
+@keyframes munculNaik6 {
+  0% {
+    opacity: 0;
+    bottom: -200px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 40px;
+  }
+}
+.gambar10 {
+  position: absolute;
+  bottom: -200px;
+  right: 40%;
+  opacity: 0; 
+  animation: munculNaik7 1s ease-in-out 45s forwards;
+  width: 200px;
+  height: 200px;
+}
+
+@keyframes munculNaik7 {
+  0% {
+    opacity: 0;
+    bottom: -200px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 25px;
+  }
+}
+.gambar11 {
+  position: absolute;
+  bottom: -200px;
+  right: 4%;
+  opacity: 0; 
+  animation: munculNaik8 1s ease-in-out 55s forwards;
+  width: 1250px;
+  height: 700px;
+}
+
+@keyframes munculNaik8 {
+  0% {
+    opacity: 0;
+    bottom: -200px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 5px;
+  }
+}
+        .text {
+            position: absolute;  
+            top: 45%;  
+            left: 60%; 
+            transform: translateX(-40%);  
+            font-family: Arial, sans-serif; 
+            font-size: 30px; 
+            color: white; 
+            background-color: rgba(0, 0, 0, 0.6); 
+            padding: 10px 20px; 
+            border-radius: 10px; 
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); 
+            animation: fadeOut 10s forwards ;
+        }
+        
+      
+        @keyframes fadeOut {
+            0% {
+                opacity: 1; 
+            }
+            50% {
+                opacity: 1; 
+            }
+            100% {
+                opacity: 0; 
+            }
+        }
+        .text1 {
+            position: absolute;  
+            top: 45%;  
+            left: 60%;  
+            transform: translateX(-40%);  
+            font-family: Arial, sans-serif;  
+            font-size: 30px;
+            color: white; 
+            background-color: rgba(0, 0, 0, 0.6); 
+            padding: 10px 20px; 
+            border-radius: 10px; 
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+            animation: fadeOut1 15s forwards ;
+        }
+        @keyframes fadeOut1 {
+            0% {
+                opacity: 0; 
+            }
+            50% {
+                opacity: 0; 
+            }
+            80% {
+                opacity: 1; 
+            }
+            100% {
+                opacity: 0; 
+            }
+      
+        }
+        .text2 {
+            position: absolute;  
+            top: 36%;  
+            left: 60%;  
+            transform: translateX(-40%);  
+            font-family: Arial, sans-serif;  
+            font-size: 30px;
+            color: white; 
+            background-color: rgba(0, 0, 0, 0.6); 
+            padding: 10px 20px; 
+            border-radius: 10px; 
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+            animation: fadeOut2 25s forwards ;
+        }
+        @keyframes fadeOut2 {
+            0% {
+                opacity: 0; 
+            }
+            50% {
+                opacity: 0; 
+            }
+            80% {
+                opacity: 1; 
+            }
+            90% {
+                opacity: 0; 
+            }
+            100% {
+                opacity: 0; 
+            }
+      
+        }
+        .text3 {
+            position: absolute;  
+            top: 40%;  
+            left: 60%;  
+            transform: translateX(-40%);  
+            font-family: Arial, sans-serif;  
+            font-size: 30px;
+            color: white; 
+            background-color: rgba(0, 0, 0, 0.6); 
+            padding: 10px 20px; 
+            border-radius: 10px; 
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+            animation: fadeOut3 30s forwards ;
+        }
+        @keyframes fadeOut3 {
+            0% {
+                opacity: 0; 
+            }
+            50% {
+                opacity: 0; 
+            }
+            90% {
+                opacity: 1; 
+            }
+            100% {
+                opacity: 0; 
+            }
+      
+        }
+        .text4 {
+            position: absolute;  
+            top: 30%;  
+            left: 60%;  
+            transform: translateX(-40%);  
+            font-family: Arial, sans-serif;  
+            font-size: 25px;
+            color: white; 
+            background-color: rgba(0, 0, 0, 0.6); 
+            padding: 10px 10px; 
+            border-radius: 10px; 
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+            animation: fadeOut4 45s forwards ;
+        }
+        @keyframes fadeOut4 {
+            0% {
+                opacity: 0; 
+            }
+            50% {
+                opacity: 0; 
+            }
+            90% {
+                opacity: 1; 
+            
+            }
+            100% {
+                opacity: 0; 
+            }
+      
+        }
+        .text5 {
+            position: absolute;  
+            top: 30%;  
+            left: 55%;  
+            transform: translateX(-40%);  
+            font-family: Arial, sans-serif;  
+            font-size: 30px;
+            color: white; 
+            background-color: rgba(0, 0, 0, 0.6); 
+            padding: 10px 20px; 
+            border-radius: 10px; 
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+            animation: fadeOut5 70s forwards ;
+        }
+        @keyframes fadeOut5 {
+            0% {
+                opacity: 0; 
+            }
+            50% {
+                opacity: 0; 
+            }
+            90% {
+                opacity: 1; 
+            
+            }
+            100% {
+                opacity: 0; 
+            }
+      
+        }
+        .text6 {
+            position: absolute;  
+            top: 75%;  
+            right: 1px;  
+            transform: translateX(-40%);  
+            font-family: Arial, sans-serif; 
+            font-size: 40px; 
+            color: white; 
+            background-color: rgba(0, 0, 0, 0.6); 
+            padding: 10px 20px; 
+            border-radius: 10px; 
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); 
+            animation: fadeOut6 100s forwards ;
+           
+        }
+        @keyframes fadeOut6 {
+            0% {
+                opacity: 0; 
+            }
+            50% {
+                opacity: 0; 
+            }
+            80% {
+                opacity: 1; 
+            }
+            100% {
+                opacity: 1; 
+            }
+            
+      
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>SAVE THE EARTH</h1> 
+    <img src="https://cdn.pixabay.com/animation/2023/05/22/20/17/20-17-27-433_512.gif" class="gambar4">
+   
+    <div class="text"><i>"Let's protect the earth for a better life because a healthy environment depends on how we protect it."</i></div>
+    <div class="text1">In everyday life, we often use energy such as water and electricity excessively, the impact of this is very dangerous if used continuously.</div>
+    <div class="text2">The most dangerous impacts on Earth caused by excessive use of water and electricity are
+      <br>* Global Warming 
+      <br>* Water Crisis and Drought
+      <br>* Ecosystem Destruction
+      <br>* Environmental Pollution
+      <br>* Depletion of Natural Resources
+    </div>
+    <div class="text3">How to overcome excessive water and electricity usage
+      <br>* Turn Off Unused Electronics
+      <br>* Limit the Use of Water-Hogging Appliances
+      <br>* Practice the 3 R’s: Reduce, Reuse, Recycle
+    </div>
+    <div class="text4">Benefits of 3R:
+      <br>* <b>Reduce Waste:</b> By reducing, reusing, and recycling, we can significantly lower the amount of waste we produce.
+      <br>* <b>Conserve Natural Resources:</b> Recycling and reducing the consumption of new goods help conserve limited natural resources.
+      <br>* <b>Reduce Pollution:</b> Recycling reduces pollution from the production of new goods and waste disposal.
+      <br>* <b>Support Environmental Sustainability:</b> 3R practices contribute to the long-term health of the planet by maintaining ecological balance and lowering carbon footprints.</div>
+    <div class="text5">By adopting these simple, practical tips, individuals and communities can significantly reduce their consumption of water and electricity, benefiting both the environment and the economy. Small changes, when practiced consistently, can have a big impact on creating a more sustainable future for everyone :)</div>
+   
+    <img src="https://i.pinimg.com/originals/f6/77/06/f6770624a35b3db11b3ba9d9f3a4fbd1.gif" class="gambar1">
+    <img src="https://i.pinimg.com/originals/38/ed/e0/38ede0660f62111dcc15d2d17df51c67.gif" class="gambar3">
+
+  
+    <img src="https://i.pinimg.com/originals/de/26/a6/de26a6b76f0b92aabf82bee854347726.gif" class="gambar5">
+    <img src="https://i.pinimg.com/originals/d6/7b/ec/d67becae2da0f810f63ec8309a5f3f3f.gif" class="gambar7">
+    
+    <img src="https://i.pinimg.com/originals/92/3a/21/923a2151ce624bd50199a6d77d418802.gif" class="gambar6">
+   
+    <img src="https://i.pinimg.com/originals/65/79/2f/65792f7c08344a5b41d201a770d9d21e.gif" class="gambar9">
+    <img src="https://i.pinimg.com/originals/06/cd/58/06cd58345335551f57293071dd4d07b4.gif" class="gambar10">
+    <img src="https://i.pinimg.com/originals/a9/02/d1/a902d19923af3ef18e2c8f8a43889814.gif" class="gambar11">
+    <div class="text6"><i>The earth is what we all have in common</i></div>
+</body>
+</html>
